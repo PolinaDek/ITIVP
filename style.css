@@ -5,12 +5,6 @@ body {
     
 }
 
-.home1 {
-    background-image: url('img/back2.jpg'); /* Путь к вашему изображению */
-    background-size:  cover; /* Фон будет статичным */
-    background-position: center; /* Центрирует фон */
-    background-repeat: no-repeat; /* Избегает повторения изображения */
-}
 
 .other {
     background-image: url('img/back.jpg'); /* Путь к вашему изображению */
