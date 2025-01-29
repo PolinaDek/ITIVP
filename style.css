@@ -6,6 +6,7 @@ body {
 }
 
 
+
 .other {
     background-image: url('img/back.jpg'); /* Путь к вашему изображению */
     background-size:  1000px 800px fixed; /* Фон будет статичным */
@@ -82,7 +83,7 @@ nav a:hover {
     width: 250px; 
     height: auto; 
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid #000000;
     transition: transform 0.3s;
 }
 .item:hover img {
@@ -92,6 +93,50 @@ nav a:hover {
 .item p {
     margin-top: 10px;
     font-weight: bold;
-    color: black; 
+    color: #000000; 
     text-decoration: none;
+}
+.catalog1 {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    
+    color: #000000;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.product-item {
+    width: calc(25% - 20px); /* Четыре товара в строку с отступами */
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    width: 290px;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
 }
