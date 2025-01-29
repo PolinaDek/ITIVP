@@ -140,3 +140,28 @@ nav a:hover {
     max-width: 100%;
     height: auto;
 }
+.container1 {
+    min-height: calc(100vh - 60px); /* Учитываем высоту футера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.image-container img {
+    max-width: 500px; /* Увеличение размера изображения */
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px; 
+    margin-top: 20px;/* Отступ снизу */
+    border-radius: 12px; /* Закругление углов */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличение тени */
+}
+
+.contacts {
+    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
+}
