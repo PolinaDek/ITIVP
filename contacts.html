@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-image: url('гл.png'); /* Фоновая картинка */
+            background-size: cover; /* Картинка растягивается, чтобы покрыть весь блок */
+            background-position: center; /* Центрирование фонового изображения */
+            background-repeat: no-repeat; /* Отключение повторения */
+            min-height: calc(100vh - 60px); /* Учитываем высоту футера */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 500px; /* Увеличение размера изображения */
+            height: auto;
+            margin-bottom: 20px; /* Отступ снизу */
+            border-radius: 12px; /* Закругление углов */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличение тени */
+        }
+
+        .contacts {
+            background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
+        }
+
+       
+    </style>
 </head>
-<body class="other">
+<body>
     <header>
         <h1>Магазин одежды</h1>
         <nav>
@@ -17,17 +54,27 @@
     </header>
 
     <div class="container">
+        <div class="image-container">
+            <img src="магазин1.jpg" alt="Изображение магазина">
+        </div>
+
         <div class="contacts">
             <h2>Контакты</h2>
-            <p>Адрес: г. Москва, ул. Примерная, д. 10</p>
-            <p>Телефон: +7 (999) 123-45-67</p>
-            <p>Email: shop@example.com</p>
+            <p>Адрес: г. Минск, ул. Карла Маркса, д.13</p>
+            <p>Телефон: +375(29) 123-45-67</p>
+            <p>Email: clothshop@gmail.com</p>
+
+            <div class="working-hours">
+                <p><span>Время работы:</span></p>
+                <p>Понедельник – Пятница: 10:00 – 19:00</p>
+                <p>Суббота: 10:00 – 18:00</p>
+                <p>Воскресенье: выходной</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Магазин одежды. Все права защищены.</p>
-</footer>
-
+        <p style="text-align: left; padding-left: 20px;">&copy; 2025 Магазин одежды. Все права защищены.</p>
+    </footer>
 </body>
 </html>
